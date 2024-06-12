@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import tcod
+import color
 import copy
 from engine import Engine
 import entity_factories
@@ -10,7 +11,7 @@ def main() -> None:
     screen_height = 50 # Default: 50
 
     map_width = 80 # Default: 80
-    map_height = 50 # Default: 50
+    map_height = 43 # Default: 43
     
     room_max_size = 10 # Default 10
     room_min_size = 6 # Default 6
@@ -37,6 +38,10 @@ def main() -> None:
     )
 
     engine.update_fov()
+    
+    engine.message_log.add_message(
+        "Hello and welcome, adventurer, to yet another dungeon!", color.welcome_text
+    )
 
     with tcod.context.new_terminal(
         screen_width,
