@@ -6,15 +6,15 @@ import entity_factories
 from procgen import generate_dungeon
 
 def main() -> None:
-    screen_width = 80
-    screen_height = 50
+    screen_width = 80 # Default: 80
+    screen_height = 50 # Default: 50
 
-    map_width = 80
-    map_height = 50
+    map_width = 80 # Default: 80
+    map_height = 50 # Default: 50
     
-    room_max_size = 10
-    room_min_size = 6
-    max_rooms = 30
+    room_max_size = 10 # Default 10
+    room_min_size = 6 # Default 6
+    max_rooms = 30 # Default 30
     
     max_monsters_per_room = 2
 
