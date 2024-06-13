@@ -3,6 +3,9 @@ This is a project developed from a tutorial by [TStand90](https://github.com/TSt
 
 Feel free to provide feedback/raise any issues you may run into when you play the game. 
 
+## Instructions
+The [Releases](Releases) folder contains the application in executable format. Otherwise, ensure you have python installed and then run `python main.py` or `python3 main.py` (depending on what your environment looks like) from inside the Roguelike directory to run the game.
+
 ## Changelog
 Version 1.0 - This is the state of the game right after finishing the tutorial linked above (with a few minor tweaks to things like the name of the window, welcome text, etc.). Current, stable build.
 
