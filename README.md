@@ -1,5 +1,5 @@
 # Tombs of the Ancient Kings
-This is a project developed from a tutorial by [TStand90](https://github.com/TStand90) (original tutorial found [here](https://rogueliketutorials.com/).
+This is a project developed from a tutorial by [TStand90](https://github.com/TStand90) (original tutorial found [here](https://rogueliketutorials.com/)).
 
 Feel free to provide feedback/raise any issues you may run into when you play the game. 
 
