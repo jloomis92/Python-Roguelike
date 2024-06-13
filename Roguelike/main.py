@@ -26,7 +26,7 @@ def main() -> None:
         screen_width,
         screen_height,
         tileset=tileset,
-        title="Yet Another Roguelike Tutorial",
+        title="Tombs of the Ancient Kings",
         vsync=True,
     ) as context:
         root_console = tcod.Console(screen_width, screen_height, order="F")
