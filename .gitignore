@@ -1,2 +1,5 @@
 /Hangman
 /keystrokes.py
+
+# Saved games
+*.sav
