@@ -1,5 +1,6 @@
 from enum import auto, Enum
 
+
 class EquipmentType(Enum):
-    WEWAPON = auto()
+    WEAPON = auto()
     ARMOR = auto()
