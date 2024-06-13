@@ -44,7 +44,7 @@ You can use several differnt keys to move your rogue around the dungeon. The cur
 > [!NOTE]
 > Note: Use the letters that coorespond to the menu item to interact with it inside of the menu (consuming a potion, equipping/unequipping an item, dropping an item, etc.)
 
-## Planned Features:
+## Planned Features
 - [ ] Adjust monster difficulty
 - [ ] Add in-game Help menu to display things like controls, or any other relevant information.
 - [ ] Add in some new items/spells
