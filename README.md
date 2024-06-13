@@ -1,7 +1,7 @@
 # Tombs of the Ancient Kings
 In typical roguelike fashion, each dungeon level as well as items/monsters are procedurally generated fresh with each new game or level of the dungeon you explore. If you die, you start all over again. If the game quits without you dying, there is a save file called `savegame.sav` that stores the game engine's state. When you start playing again, you can choose to either wipe that and start a new game, or continue your previous save.
 
-Feel free to provide feedback/raise any issues you may run into when you play the game. See the [Planned Features](https://github.com/jloomis92/Python-Roguelike/edit/main/README.md#planned-features) section below to see what I currently have planned for implementation at some point.
+Feel free to provide feedback/raise any issues you may run into when you play the game. See the [Planned Features](https://github.com/jloomis92/Python-Roguelike/edit/main/#planned-features) section below to see what I currently have planned for implementation at some point.
 
 This is a project developed from a tutorial by [TStand90](https://github.com/TStand90) (original tutorial found [here](https://rogueliketutorials.com/)).
 
