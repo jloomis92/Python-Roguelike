@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Optional, TYPE_CHECKING
+from typing import Callable, Optional, Tuple, TYPE_CHECKING
 import tcod.event
 import tcod
 import actions
@@ -256,7 +256,7 @@ class SelectIndexHandler(AskUserEventHandler):
     
     def ev_mousebuttondown(self, event: tcod.event.MouseButtonDown) -> Optional[Action]:
         """Left click confirms a selection"""
-        if self.enging.game_map.in_bounds(*event.tile):
+        if self.engine.game_map.in_bounds(*event.tile):
             if event.button == 1:
                 return self.on_index_selected(*event.tile)
             return super().ev_mousebuttondown(event)
@@ -271,6 +271,19 @@ class LookHandler(SelectIndexHandler):
     def on_index_selected(self, x: int, y: int) -> None:
         """Return to the main handler."""
         self.engine.event_handler = MainGameEventHandler(self.engine)
+        
+class SingleRangedAttackHandler(SelectIndexHandler):
+    """Handles targeting a single enemy. Only the enemy selectedw ill be affected."""
+    
+    def __init__(
+        self, engine: Engine, callback: Callable[[Tuple[int, int]], Optional[Action]]
+    ):
+        super().__init__(engine)
+        
+        self.callback = callback
+        
+    def on_index_selected(self, x: int, y: int) -> Optional[Action]:
+        return self.callback((x, y))
     
 class MainGameEventHandler(EventHandler):
     
