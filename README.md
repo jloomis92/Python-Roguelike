@@ -11,6 +11,7 @@ Version 1.0 - This is the state of the game right after finishing the tutorial l
 - [ ] Add in-game Help menu to display things like controls, or any other relevant information.
 - [ ] Add in some new items/spells
 - [ ] Expand ability to have more than one savegame file
+- [ ] Add way to save game without having to exit
 
 ## Controls
 Until I have the in-game help menu set up, this is the best I can do:
@@ -30,6 +31,9 @@ You can use several differnt keys to move your rogue around the dungeon. The cur
   -  **3:** Move Down, Right
 
 ### Interaction
+
+**C** -  Open character menu
+
 **G** -  Pick up items
 
 **I** -  View inventory
